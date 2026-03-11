@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baseline or Warning Light? Remixing the WSJ Inflation Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-shape ambient-one"></div>
+    <div class="ambient-shape ambient-two"></div>
+
+    <header class="hero">
+      <p class="eyebrow">COMP 617 - Module 2 Data Story Remix</p>
+      <h1>Baseline or Warning Light?</h1>
+      <p class="deck">
+        Remixing the Wall Street Journal's February 2026 inflation story by shifting from one
+        monthly snapshot to coordinated views of category pressure, trend persistence, and oil
+        sensitivity.
+      </p>
+      <div class="meta-row">
+        <span>By Clay Parr</span>
+        <span>Published March 11, 2026</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="copy-block">
+        <p>
+          The original Wall Street Journal article argued that <strong>February 2026 inflation was
+          calm on paper (2.4% headline, 2.5% core)</strong> but potentially fragile because a sudden
+          geopolitical shock could push energy prices higher. This remix keeps that core insight,
+          then asks a different question: <strong>how much of inflation risk is really oil, and how
+          much is still embedded in services?</strong>
+        </p>
+        <p>
+          Click any month in the first chart. The selected month updates the category breakdown and
+          the oil-versus-energy chart below.
+        </p>
+      </section>
+
+      <section class="viz-section">
+        <div class="section-head">
+          <h2>1) Baseline Trend: Headline vs Core</h2>
+          <p>
+            A long view shows why one month is never enough. Hover to inspect values, click a month
+            to coordinate all views.
+          </p>
+        </div>
+        <div class="card">
+          <div id="trend-chart" class="chart" aria-label="Line chart of headline and core inflation"></div>
+          <div class="stat-strip">
+            <div class="stat-chip">
+              <span class="label">Selected Month</span>
+              <strong id="selected-month">-</strong>
+            </div>
+            <div class="stat-chip">
+              <span class="label">Headline CPI (YoY)</span>
+              <strong id="selected-overall">-</strong>
+            </div>
+            <div class="stat-chip">
+              <span class="label">Core CPI (YoY)</span>
+              <strong id="selected-core">-</strong>
+            </div>
+            <div class="stat-chip">
+              <span class="label">WTI Oil</span>
+              <strong id="selected-wti">-</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="viz-section">
+        <div class="section-head split">
+          <div>
+            <h2>2) Where Pressure Sits</h2>
+            <p>
+              Category inflation for the selected month. The dashed line marks overall CPI.
+            </p>
+          </div>
+          <div class="controls" role="group" aria-label="Category sorting controls">
+            <button class="toggle is-active" data-sort="value">Sort by inflation</button>
+            <button class="toggle" data-sort="alpha">Sort alphabetically</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3 id="category-title">Category inflation</h3>
+          <div id="category-chart" class="chart" aria-label="Diverging bar chart of CPI categories"></div>
+        </div>
+      </section>
+
+      <section class="viz-section">
+        <div class="section-head">
+          <h2>3) Oil Price vs Energy Inflation</h2>
+          <p>
+            If oil is the immediate risk channel, points should rise up and to the right. Hover or
+            click points to inspect months.
+          </p>
+        </div>
+        <div class="card">
+          <div id="oil-chart" class="chart" aria-label="Scatterplot of WTI oil price versus energy inflation"></div>
+          <p class="footnote" id="oil-insight"></p>
+        </div>
+      </section>
+
+      <section class="copy-block conclusion">
+        <h2>Remix Takeaway</h2>
+        <p>
+          This view-based remix supports the WSJ warning, but with a narrower claim: oil shocks can
+          quickly reheat headline inflation, yet category data suggest that persistent services costs
+          remain a second, slower force. Readers can now test that claim month by month instead of
+          accepting one static frame.
+        </p>
+      </section>
+
+      <section class="copy-block citations">
+        <h2>Credits and Sources</h2>
+        <ul>
+          <li>
+            Original story: Justin Lahart, Wall Street Journal,
+            <a href="https://www.wsj.com/economy/cpi-inflation-report-february-2026-df32173e?st=pou3u9&reflink=desktopwebshare_permalink" target="_blank" rel="noopener noreferrer">
+              "Inflation Holds Steady, but Iran War Threatens to Boost Prices"
+            </a>
+            (updated March 11, 2026).
+          </li>
+          <li>
+            Data source: Federal Reserve Economic Data (FRED), St. Louis Fed;
+            underlying CPI data from the U.S. Bureau of Labor Statistics and oil data from the
+            U.S. Energy Information Administration.
+          </li>
+          <li>
+            AI use disclosure: OpenAI Codex (GPT-5) was used for implementation support,
+            D3 debugging, and copy editing. Story framing and design choices were authored by Clay Parr.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

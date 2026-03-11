@@ -1,0 +1,261 @@
+:root {
+  --bg: #f7f2e8;
+  --ink: #1f2a37;
+  --muted: #51606f;
+  --card: rgba(255, 255, 255, 0.8);
+  --line-core: #1d6fa5;
+  --line-overall: #c3423f;
+  --positive: #cf4d45;
+  --negative: #2f6aa0;
+  --accent: #f2a65a;
+  --shadow: 0 16px 40px rgba(26, 40, 58, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 20% 0%, #fce8cb 0%, transparent 45%),
+    radial-gradient(circle at 85% 15%, #d7ecf8 0%, transparent 30%),
+    var(--bg);
+  line-height: 1.6;
+  padding: 2rem 1.25rem 4rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.ambient-shape {
+  position: fixed;
+  z-index: -1;
+  filter: blur(60px);
+  opacity: 0.45;
+}
+
+.ambient-one {
+  width: 24rem;
+  height: 24rem;
+  background: #ffd9a0;
+  top: -8rem;
+  left: -7rem;
+  border-radius: 42% 58% 55% 45% / 42% 44% 56% 58%;
+}
+
+.ambient-two {
+  width: 22rem;
+  height: 22rem;
+  background: #bee7f5;
+  right: -8rem;
+  top: 24rem;
+  border-radius: 66% 34% 47% 53% / 54% 58% 42% 46%;
+}
+
+header.hero,
+main {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  margin-top: 0.35rem;
+}
+
+.deck {
+  font-size: 1.1rem;
+  max-width: 72ch;
+  margin: 0.8rem 0 0;
+  color: #2d3f52;
+}
+
+.meta-row {
+  margin-top: 0.95rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.copy-block {
+  max-width: 74ch;
+  margin-bottom: 2.2rem;
+}
+
+.copy-block p {
+  margin: 0.9rem 0;
+}
+
+.viz-section {
+  margin: 2.4rem 0;
+}
+
+.section-head {
+  margin-bottom: 0.75rem;
+}
+
+.section-head h2 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+}
+
+.section-head p {
+  margin: 0.35rem 0 0;
+  color: #405164;
+}
+
+.section-head.split {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(72, 93, 118, 0.2);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.chart {
+  width: 100%;
+  min-height: 360px;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(31, 42, 55, 0.92);
+  color: #f2f4f7;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.83rem;
+  line-height: 1.3;
+  transform: translate(12px, -16px);
+  border: 1px solid rgba(242, 166, 90, 0.45);
+}
+
+.stat-strip {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.6rem;
+}
+
+.stat-chip {
+  border: 1px solid rgba(62, 84, 108, 0.24);
+  border-radius: 10px;
+  padding: 0.5rem 0.65rem;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.stat-chip .label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.stat-chip strong {
+  font-size: 1.03rem;
+}
+
+.controls {
+  display: inline-flex;
+  gap: 0.45rem;
+}
+
+.toggle {
+  border: 1px solid rgba(52, 76, 100, 0.4);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.42rem 0.68rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  color: #304659;
+}
+
+.toggle.is-active {
+  background: #304659;
+  color: #ffffff;
+  border-color: #304659;
+}
+
+#category-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+}
+
+.axis path,
+.axis line {
+  stroke: #8ea0b2;
+}
+
+.grid line {
+  stroke: rgba(122, 142, 161, 0.25);
+}
+
+.grid path {
+  display: none;
+}
+
+.legend {
+  font-size: 0.86rem;
+  fill: #33475b;
+}
+
+.reference-note,
+.footnote {
+  color: #435467;
+  font-size: 0.9rem;
+  margin-top: 0.55rem;
+}
+
+.citations ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.citations li {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #1b6d98;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 1.2rem 0.8rem 3rem;
+  }
+
+  .chart {
+    min-height: 320px;
+  }
+}

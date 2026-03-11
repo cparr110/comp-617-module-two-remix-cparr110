@@ -1,0 +1,5237 @@
+{
+  "metadata": {
+    "generatedAt": "2026-03-11T15:19:30.300Z",
+    "source": "FRED (St. Louis Fed), underlying series from U.S. Bureau of Labor Statistics and U.S. Energy Information Administration",
+    "series": [
+      {
+        "id": "CPIAUCSL",
+        "label": "Overall CPI",
+        "group": "headline"
+      },
+      {
+        "id": "CPILFESL",
+        "label": "Core CPI (less food and energy)",
+        "group": "headline"
+      },
+      {
+        "id": "CPIENGSL",
+        "label": "Energy",
+        "group": "headline"
+      },
+      {
+        "id": "CPIFABSL",
+        "label": "Food and beverages",
+        "group": "headline"
+      },
+      {
+        "id": "CUSR0000SAH1",
+        "label": "Shelter",
+        "group": "headline"
+      },
+      {
+        "id": "MCOILWTICO",
+        "label": "WTI crude oil ($/barrel)",
+        "group": "external"
+      },
+      {
+        "id": "CUSR0000SEHF01",
+        "label": "Electricity",
+        "group": "category"
+      },
+      {
+        "id": "CUSR0000SEHF02",
+        "label": "Utility gas service",
+        "group": "category"
+      },
+      {
+        "id": "CUSR0000SETA02",
+        "label": "Used cars and trucks",
+        "group": "category"
+      },
+      {
+        "id": "CUSR0000SETA01",
+        "label": "New vehicles",
+        "group": "category"
+      },
+      {
+        "id": "CPIAPPNS",
+        "label": "Apparel",
+        "group": "category"
+      },
+      {
+        "id": "CUSR0000SEFV",
+        "label": "Food away from home",
+        "group": "category"
+      },
+      {
+        "id": "CUSR0000SASLE",
+        "label": "Services less energy services",
+        "group": "category"
+      },
+      {
+        "id": "CUSR0000SAF113",
+        "label": "Fruits and vegetables",
+        "group": "category"
+      },
+      {
+        "id": "CUSR0000SAF112",
+        "label": "Meats, poultry, fish, and eggs",
+        "group": "category"
+      },
+      {
+        "id": "CUSR0000SEMD",
+        "label": "Hospital and related services",
+        "group": "category"
+      }
+    ],
+    "selectedDateDefault": "2026-02-01"
+  },
+  "trend": [
+    {
+      "date": "2019-01-01",
+      "label": "Jan 2019",
+      "overallYoY": 1.488,
+      "coreYoY": 2.179,
+      "energyYoY": -5.771,
+      "foodYoY": 1.66,
+      "shelterYoY": 3.227,
+      "wti": 51.38
+    },
+    {
+      "date": "2019-02-01",
+      "label": "Feb 2019",
+      "overallYoY": 1.519,
+      "coreYoY": 2.141,
+      "energyYoY": -5.45,
+      "foodYoY": 1.968,
+      "shelterYoY": 3.387,
+      "wti": 54.95
+    },
+    {
+      "date": "2019-03-01",
+      "label": "Mar 2019",
+      "overallYoY": 1.883,
+      "coreYoY": 2.067,
+      "energyYoY": -0.364,
+      "foodYoY": 2.07,
+      "shelterYoY": 3.359,
+      "wti": 58.15
+    },
+    {
+      "date": "2019-04-01",
+      "label": "Apr 2019",
+      "overallYoY": 2.001,
+      "coreYoY": 2.091,
+      "energyYoY": 1.485,
+      "foodYoY": 1.724,
+      "shelterYoY": 3.419,
+      "wti": 63.86
+    },
+    {
+      "date": "2019-05-01",
+      "label": "May 2019",
+      "overallYoY": 1.796,
+      "coreYoY": 1.972,
+      "energyYoY": -0.236,
+      "foodYoY": 1.935,
+      "shelterYoY": 3.332,
+      "wti": 60.83
+    },
+    {
+      "date": "2019-06-01",
+      "label": "Jun 2019",
+      "overallYoY": 1.671,
+      "coreYoY": 2.075,
+      "energyYoY": -2.725,
+      "foodYoY": 1.856,
+      "shelterYoY": 3.505,
+      "wti": 54.66
+    },
+    {
+      "date": "2019-07-01",
+      "label": "Jul 2019",
+      "overallYoY": 1.826,
+      "coreYoY": 2.166,
+      "energyYoY": -1.47,
+      "foodYoY": 1.765,
+      "shelterYoY": 3.482,
+      "wti": 57.35
+    },
+    {
+      "date": "2019-08-01",
+      "label": "Aug 2019",
+      "overallYoY": 1.738,
+      "coreYoY": 2.321,
+      "energyYoY": -4.01,
+      "foodYoY": 1.722,
+      "shelterYoY": 3.355,
+      "wti": 54.81
+    },
+    {
+      "date": "2019-09-01",
+      "label": "Sep 2019",
+      "overallYoY": 1.684,
+      "coreYoY": 2.33,
+      "energyYoY": -4.885,
+      "foodYoY": 1.76,
+      "shelterYoY": 3.526,
+      "wti": 56.95
+    },
+    {
+      "date": "2019-10-01",
+      "label": "Oct 2019",
+      "overallYoY": 1.734,
+      "coreYoY": 2.338,
+      "energyYoY": -4.758,
+      "foodYoY": 1.998,
+      "shelterYoY": 3.37,
+      "wti": 53.96
+    },
+    {
+      "date": "2019-11-01",
+      "label": "Nov 2019",
+      "overallYoY": 2.092,
+      "coreYoY": 2.355,
+      "energyYoY": -0.463,
+      "foodYoY": 1.92,
+      "shelterYoY": 3.33,
+      "wti": 57.03
+    },
+    {
+      "date": "2019-12-01",
+      "label": "Dec 2019",
+      "overallYoY": 2.32,
+      "coreYoY": 2.291,
+      "energyYoY": 3.534,
+      "foodYoY": 1.71,
+      "shelterYoY": 3.241,
+      "wti": 59.88
+    },
+    {
+      "date": "2020-01-01",
+      "label": "Jan 2020",
+      "overallYoY": 2.6,
+      "coreYoY": 2.282,
+      "energyYoY": 7.736,
+      "foodYoY": 1.778,
+      "shelterYoY": 3.351,
+      "wti": 57.52
+    },
+    {
+      "date": "2020-02-01",
+      "label": "Feb 2020",
+      "overallYoY": 2.341,
+      "coreYoY": 2.368,
+      "energyYoY": 2.955,
+      "foodYoY": 1.778,
+      "shelterYoY": 3.315,
+      "wti": 50.54
+    },
+    {
+      "date": "2020-03-01",
+      "label": "Mar 2020",
+      "overallYoY": 1.494,
+      "coreYoY": 2.098,
+      "energyYoY": -6.166,
+      "foodYoY": 1.89,
+      "shelterYoY": 3.012,
+      "wti": 29.21
+    },
+    {
+      "date": "2020-04-01",
+      "label": "Apr 2020",
+      "overallYoY": 0.313,
+      "coreYoY": 1.431,
+      "energyYoY": -17.909,
+      "foodYoY": 3.408,
+      "shelterYoY": 2.6,
+      "wti": 16.55
+    },
+    {
+      "date": "2020-05-01",
+      "label": "May 2020",
+      "overallYoY": 0.198,
+      "coreYoY": 1.218,
+      "energyYoY": -18.358,
+      "foodYoY": 3.86,
+      "shelterYoY": 2.505,
+      "wti": 28.56
+    },
+    {
+      "date": "2020-06-01",
+      "label": "Jun 2020",
+      "overallYoY": 0.717,
+      "coreYoY": 1.184,
+      "energyYoY": -12.187,
+      "foodYoY": 4.341,
+      "shelterYoY": 2.351,
+      "wti": 38.31
+    },
+    {
+      "date": "2020-07-01",
+      "label": "Jul 2020",
+      "overallYoY": 0.997,
+      "coreYoY": 1.561,
+      "energyYoY": -11.412,
+      "foodYoY": 3.874,
+      "shelterYoY": 2.344,
+      "wti": 40.71
+    },
+    {
+      "date": "2020-08-01",
+      "label": "Aug 2020",
+      "overallYoY": 1.281,
+      "coreYoY": 1.722,
+      "energyYoY": -9.605,
+      "foodYoY": 3.962,
+      "shelterYoY": 2.321,
+      "wti": 42.34
+    },
+    {
+      "date": "2020-09-01",
+      "label": "Sep 2020",
+      "overallYoY": 1.391,
+      "coreYoY": 1.719,
+      "energyYoY": -7.657,
+      "foodYoY": 3.782,
+      "shelterYoY": 2.062,
+      "wti": 39.63
+    },
+    {
+      "date": "2020-10-01",
+      "label": "Oct 2020",
+      "overallYoY": 1.23,
+      "coreYoY": 1.636,
+      "energyYoY": -8.898,
+      "foodYoY": 3.828,
+      "shelterYoY": 2.044,
+      "wti": 39.4
+    },
+    {
+      "date": "2020-11-01",
+      "label": "Nov 2020",
+      "overallYoY": 1.176,
+      "coreYoY": 1.669,
+      "energyYoY": -9.412,
+      "foodYoY": 3.637,
+      "shelterYoY": 1.925,
+      "wti": 40.94
+    },
+    {
+      "date": "2020-12-01",
+      "label": "Dec 2020",
+      "overallYoY": 1.32,
+      "coreYoY": 1.624,
+      "energyYoY": -7.012,
+      "foodYoY": 3.859,
+      "shelterYoY": 1.853,
+      "wti": 47.02
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "overallYoY": 1.374,
+      "coreYoY": 1.376,
+      "energyYoY": -3.487,
+      "foodYoY": 3.696,
+      "shelterYoY": 1.56,
+      "wti": 52
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "overallYoY": 1.67,
+      "coreYoY": 1.28,
+      "energyYoY": 2.309,
+      "foodYoY": 3.503,
+      "shelterYoY": 1.43,
+      "wti": 59.04
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "overallYoY": 2.668,
+      "coreYoY": 1.649,
+      "energyYoY": 13.852,
+      "foodYoY": 3.33,
+      "shelterYoY": 1.666,
+      "wti": 62.33
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "overallYoY": 4.133,
+      "coreYoY": 2.978,
+      "energyYoY": 24.465,
+      "foodYoY": 2.348,
+      "shelterYoY": 2.101,
+      "wti": 61.72
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "overallYoY": 4.918,
+      "coreYoY": 3.788,
+      "energyYoY": 27.668,
+      "foodYoY": 2.137,
+      "shelterYoY": 2.196,
+      "wti": 65.17
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "overallYoY": 5.296,
+      "coreYoY": 4.439,
+      "energyYoY": 23.774,
+      "foodYoY": 2.357,
+      "shelterYoY": 2.584,
+      "wti": 71.38
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "overallYoY": 5.245,
+      "coreYoY": 4.211,
+      "energyYoY": 23.193,
+      "foodYoY": 3.387,
+      "shelterYoY": 2.819,
+      "wti": 72.49
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "overallYoY": 5.152,
+      "coreYoY": 3.94,
+      "energyYoY": 24.513,
+      "foodYoY": 3.658,
+      "shelterYoY": 2.828,
+      "wti": 67.73
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "overallYoY": 5.351,
+      "coreYoY": 4.003,
+      "energyYoY": 24.706,
+      "foodYoY": 4.46,
+      "shelterYoY": 3.154,
+      "wti": 71.65
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "overallYoY": 6.235,
+      "coreYoY": 4.59,
+      "energyYoY": 29.903,
+      "foodYoY": 5.1,
+      "shelterYoY": 3.521,
+      "wti": 81.48
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "overallYoY": 6.902,
+      "coreYoY": 4.973,
+      "energyYoY": 33.896,
+      "foodYoY": 5.835,
+      "shelterYoY": 3.887,
+      "wti": 79.15
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "overallYoY": 7.174,
+      "coreYoY": 5.489,
+      "energyYoY": 30.257,
+      "foodYoY": 6.018,
+      "shelterYoY": 4.178,
+      "wti": 71.71
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "overallYoY": 7.559,
+      "coreYoY": 6.054,
+      "energyYoY": 27.166,
+      "foodYoY": 6.673,
+      "shelterYoY": 4.36,
+      "wti": 83.22
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "overallYoY": 7.937,
+      "coreYoY": 6.455,
+      "energyYoY": 25.579,
+      "foodYoY": 7.613,
+      "shelterYoY": 4.734,
+      "wti": 91.64
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "overallYoY": 8.572,
+      "coreYoY": 6.482,
+      "energyYoY": 32.002,
+      "foodYoY": 8.459,
+      "shelterYoY": 4.985,
+      "wti": 108.5
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "overallYoY": 8.232,
+      "coreYoY": 6.159,
+      "energyYoY": 30.01,
+      "foodYoY": 9.025,
+      "shelterYoY": 5.139,
+      "wti": 101.78
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "overallYoY": 8.538,
+      "coreYoY": 6.025,
+      "energyYoY": 34.456,
+      "foodYoY": 9.75,
+      "shelterYoY": 5.448,
+      "wti": 109.55
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "overallYoY": 8.979,
+      "coreYoY": 5.906,
+      "energyYoY": 41.461,
+      "foodYoY": 10.026,
+      "shelterYoY": 5.626,
+      "wti": 114.84
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "overallYoY": 8.463,
+      "coreYoY": 5.9,
+      "energyYoY": 32.922,
+      "foodYoY": 10.497,
+      "shelterYoY": 5.734,
+      "wti": 101.62
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "overallYoY": 8.223,
+      "coreYoY": 6.286,
+      "energyYoY": 23.947,
+      "foodYoY": 10.929,
+      "shelterYoY": 6.257,
+      "wti": 93.67
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "overallYoY": 8.192,
+      "coreYoY": 6.624,
+      "energyYoY": 19.894,
+      "foodYoY": 10.749,
+      "shelterYoY": 6.594,
+      "wti": 84.26
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "overallYoY": 7.759,
+      "coreYoY": 6.295,
+      "energyYoY": 17.738,
+      "foodYoY": 10.564,
+      "shelterYoY": 6.905,
+      "wti": 87.55
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "overallYoY": 7.123,
+      "coreYoY": 5.97,
+      "energyYoY": 13.006,
+      "foodYoY": 10.328,
+      "shelterYoY": 7.092,
+      "wti": 84.37
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "overallYoY": 6.405,
+      "coreYoY": 5.686,
+      "energyYoY": 6.88,
+      "foodYoY": 10.136,
+      "shelterYoY": 7.468,
+      "wti": 76.44
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "overallYoY": 6.327,
+      "coreYoY": 5.54,
+      "energyYoY": 8.3,
+      "foodYoY": 9.811,
+      "shelterYoY": 7.89,
+      "wti": 78.12
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "overallYoY": 5.958,
+      "coreYoY": 5.498,
+      "energyYoY": 4.86,
+      "foodYoY": 9.159,
+      "shelterYoY": 8.103,
+      "wti": 76.83
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "overallYoY": 4.918,
+      "coreYoY": 5.567,
+      "energyYoY": -6.675,
+      "foodYoY": 8.22,
+      "shelterYoY": 8.165,
+      "wti": 73.28
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "overallYoY": 4.95,
+      "coreYoY": 5.514,
+      "energyYoY": -4.94,
+      "foodYoY": 7.481,
+      "shelterYoY": 8.091,
+      "wti": 79.45
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "overallYoY": 4.132,
+      "coreYoY": 5.338,
+      "energyYoY": -11.253,
+      "foodYoY": 6.594,
+      "shelterYoY": 8.024,
+      "wti": 71.58
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "overallYoY": 3.071,
+      "coreYoY": 4.854,
+      "energyYoY": -16.566,
+      "foodYoY": 5.67,
+      "shelterYoY": 7.81,
+      "wti": 70.25
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "overallYoY": 3.288,
+      "coreYoY": 4.701,
+      "energyYoY": -12.342,
+      "foodYoY": 4.823,
+      "shelterYoY": 7.673,
+      "wti": 76.07
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "overallYoY": 3.723,
+      "coreYoY": 4.399,
+      "energyYoY": -3.694,
+      "foodYoY": 4.23,
+      "shelterYoY": 7.254,
+      "wti": 81.39
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "overallYoY": 3.687,
+      "coreYoY": 4.129,
+      "energyYoY": -0.503,
+      "foodYoY": 3.702,
+      "shelterYoY": 7.142,
+      "wti": 89.43
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "overallYoY": 3.251,
+      "coreYoY": 4.027,
+      "energyYoY": -4.394,
+      "foodYoY": 3.326,
+      "shelterYoY": 6.739,
+      "wti": 85.64
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "overallYoY": 3.133,
+      "coreYoY": 4.018,
+      "energyYoY": -5.354,
+      "foodYoY": 2.938,
+      "shelterYoY": 6.534,
+      "wti": 77.69
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "overallYoY": 3.316,
+      "coreYoY": 3.915,
+      "energyYoY": -1.944,
+      "foodYoY": 2.703,
+      "shelterYoY": 6.17,
+      "wti": 71.9
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "overallYoY": 3.088,
+      "coreYoY": 3.858,
+      "energyYoY": -4.327,
+      "foodYoY": 2.529,
+      "shelterYoY": 6.058,
+      "wti": 74.15
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "overallYoY": 3.157,
+      "coreYoY": 3.762,
+      "energyYoY": -1.86,
+      "foodYoY": 2.246,
+      "shelterYoY": 5.754,
+      "wti": 77.25
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "overallYoY": 3.487,
+      "coreYoY": 3.816,
+      "energyYoY": 2.057,
+      "foodYoY": 2.261,
+      "shelterYoY": 5.645,
+      "wti": 81.28
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "overallYoY": 3.361,
+      "coreYoY": 3.626,
+      "energyYoY": 2.404,
+      "foodYoY": 2.24,
+      "shelterYoY": 5.524,
+      "wti": 85.35
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "overallYoY": 3.244,
+      "coreYoY": 3.394,
+      "energyYoY": 3.607,
+      "foodYoY": 2.127,
+      "shelterYoY": 5.389,
+      "wti": 80.02
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "overallYoY": 2.97,
+      "coreYoY": 3.265,
+      "energyYoY": 0.933,
+      "foodYoY": 2.219,
+      "shelterYoY": 5.141,
+      "wti": 79.77
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "overallYoY": 2.941,
+      "coreYoY": 3.23,
+      "energyYoY": 0.994,
+      "foodYoY": 2.189,
+      "shelterYoY": 5.039,
+      "wti": 81.8
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "overallYoY": 2.607,
+      "coreYoY": 3.285,
+      "energyYoY": -4.039,
+      "foodYoY": 2.062,
+      "shelterYoY": 5.209,
+      "wti": 76.68
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "overallYoY": 2.426,
+      "coreYoY": 3.282,
+      "energyYoY": -6.815,
+      "foodYoY": 2.225,
+      "shelterYoY": 4.846,
+      "wti": 70.24
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "overallYoY": 2.579,
+      "coreYoY": 3.299,
+      "energyYoY": -4.799,
+      "foodYoY": 2.124,
+      "shelterYoY": 4.9,
+      "wti": 71.99
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "overallYoY": 2.719,
+      "coreYoY": 3.286,
+      "energyYoY": -3.142,
+      "foodYoY": 2.327,
+      "shelterYoY": 4.785,
+      "wti": 69.95
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "overallYoY": 2.871,
+      "coreYoY": 3.213,
+      "energyYoY": -0.333,
+      "foodYoY": 2.396,
+      "shelterYoY": 4.62,
+      "wti": 70.12
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "overallYoY": 2.991,
+      "coreYoY": 3.283,
+      "energyYoY": 0.828,
+      "foodYoY": 2.386,
+      "shelterYoY": 4.399,
+      "wti": 75.74
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "overallYoY": 2.802,
+      "coreYoY": 3.138,
+      "energyYoY": -0.436,
+      "foodYoY": 2.501,
+      "shelterYoY": 4.242,
+      "wti": 71.53
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "overallYoY": 2.382,
+      "coreYoY": 2.809,
+      "energyYoY": -3.388,
+      "foodYoY": 2.855,
+      "shelterYoY": 3.995,
+      "wti": 68.24
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "overallYoY": 2.325,
+      "coreYoY": 2.776,
+      "energyYoY": -3.57,
+      "foodYoY": 2.696,
+      "shelterYoY": 3.989,
+      "wti": 63.54
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "overallYoY": 2.377,
+      "coreYoY": 2.766,
+      "energyYoY": -3.093,
+      "foodYoY": 2.814,
+      "shelterYoY": 3.868,
+      "wti": 62.17
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "overallYoY": 2.68,
+      "coreYoY": 2.911,
+      "energyYoY": -0.62,
+      "foodYoY": 2.9,
+      "shelterYoY": 3.823,
+      "wti": 68.17
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "overallYoY": 2.743,
+      "coreYoY": 3.054,
+      "energyYoY": -1.235,
+      "foodYoY": 2.807,
+      "shelterYoY": 3.687,
+      "wti": 68.39
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "overallYoY": 2.939,
+      "coreYoY": 3.112,
+      "energyYoY": 0.373,
+      "foodYoY": 3.119,
+      "shelterYoY": 3.639,
+      "wti": 64.86
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "overallYoY": 3.023,
+      "coreYoY": 3.02,
+      "energyYoY": 2.941,
+      "foodYoY": 3.049,
+      "shelterYoY": 3.581,
+      "wti": 63.96
+    },
+    {
+      "date": "2025-10-01",
+      "label": "Oct 2025",
+      "overallYoY": null,
+      "coreYoY": null,
+      "energyYoY": null,
+      "foodYoY": null,
+      "shelterYoY": null,
+      "wti": 60.89
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "overallYoY": 2.696,
+      "coreYoY": 2.599,
+      "energyYoY": 4.159,
+      "foodYoY": 2.581,
+      "shelterYoY": 3.025,
+      "wti": 60.06
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "overallYoY": 2.653,
+      "coreYoY": 2.646,
+      "energyYoY": 2.071,
+      "foodYoY": 2.989,
+      "shelterYoY": 3.154,
+      "wti": 57.97
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "overallYoY": 2.391,
+      "coreYoY": 2.512,
+      "energyYoY": -0.296,
+      "foodYoY": 2.877,
+      "shelterYoY": 3.024,
+      "wti": 60.04
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "overallYoY": 2.434,
+      "coreYoY": 2.472,
+      "energyYoY": 0.4,
+      "foodYoY": 3.053,
+      "shelterYoY": 2.957,
+      "wti": 64.51
+    }
+  ],
+  "categories": [
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -2.539
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 1.162
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.889
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.798
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 2.902
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.056
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 1.398
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 1.267
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 9.996
+    },
+    {
+      "date": "2021-01-01",
+      "label": "Jan 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 4.481
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -3.568
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 1.963
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.713
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 3.361
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 2.703
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.074
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 1.14
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 1.257
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 9.285
+    },
+    {
+      "date": "2021-02-01",
+      "label": "Feb 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 6.517
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -2.479
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 2.191
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.68
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 3.795
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 2.989
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.165
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 1.468
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 1.621
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 9.362
+    },
+    {
+      "date": "2021-03-01",
+      "label": "Mar 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 9.412
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 1.911
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.394
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.847
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 3.352
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 2.76
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 1.999
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 1.985
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 2.484
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 20.963
+    },
+    {
+      "date": "2021-04-01",
+      "label": "Apr 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 11.66
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 5.558
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 4.311
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.036
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.875
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 2.786
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 0.383
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 3.378
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 2.869
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 29.732
+    },
+    {
+      "date": "2021-05-01",
+      "label": "May 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 13.337
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 4.872
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.97
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.234
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 3.114
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 2.693
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 0.955
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 5.31
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.048
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 45.238
+    },
+    {
+      "date": "2021-06-01",
+      "label": "Jun 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 15.352
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 4.21
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 4.316
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.557
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.246
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.02
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.975
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 6.428
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 2.84
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 41.649
+    },
+    {
+      "date": "2021-07-01",
+      "label": "Jul 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 18.943
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 4.209
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.471
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.705
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.331
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.658
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 8.042
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 7.667
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 2.73
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 31.897
+    },
+    {
+      "date": "2021-08-01",
+      "label": "Aug 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 21.093
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.395
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.359
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.684
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.955
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.327
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 10.495
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 8.749
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 2.9
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 24.41
+    },
+    {
+      "date": "2021-09-01",
+      "label": "Sep 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 21.055
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 4.322
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 6.606
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 5.27
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 3.045
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.059
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 11.742
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 9.814
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.271
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 26.448
+    },
+    {
+      "date": "2021-10-01",
+      "label": "Oct 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 28.498
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 4.958
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 6.421
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 5.776
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 3.818
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.504
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 12.788
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 11.063
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.442
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 31.436
+    },
+    {
+      "date": "2021-11-01",
+      "label": "Nov 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 25.574
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 5.797
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 6.449
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 6.014
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 5.089
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.266
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 12.489
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 11.718
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.696
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 37.293
+    },
+    {
+      "date": "2021-12-01",
+      "label": "Dec 2021",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 24.482
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 5.344
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 10.615
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 6.355
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 5.663
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.569
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 12.187
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 12.161
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.072
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 40.514
+    },
+    {
+      "date": "2022-01-01",
+      "label": "Jan 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 23.915
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 6.558
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 8.956
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 6.768
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 7.642
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.415
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 12.981
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 12.371
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.378
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 41.152
+    },
+    {
+      "date": "2022-02-01",
+      "label": "Feb 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 23.75
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 6.769
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 11.03
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 6.91
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 8.463
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.398
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 13.706
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 12.523
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.654
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 35.317
+    },
+    {
+      "date": "2022-03-01",
+      "label": "Mar 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 21.573
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 5.362
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 11.026
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 7.203
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 7.923
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.594
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 14.413
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 13.236
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.921
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 22.73
+    },
+    {
+      "date": "2022-04-01",
+      "label": "Apr 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 22.737
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 4.976
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 11.993
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 7.404
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 8.264
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.842
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 14.317
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 12.637
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.17
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 16.064
+    },
+    {
+      "date": "2022-05-01",
+      "label": "May 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 30.231
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 5.232
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 13.668
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 7.656
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 8.053
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.919
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 11.935
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 11.442
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.501
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 7.104
+    },
+    {
+      "date": "2022-06-01",
+      "label": "Jun 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 38.403
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 5.131
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 15.264
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 7.571
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 9.28
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.029
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 11.032
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 10.469
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.579
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 6.616
+    },
+    {
+      "date": "2022-07-01",
+      "label": "Jul 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 30.503
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 5.061
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 15.812
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.042
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 9.452
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.054
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 10.752
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 10.07
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 6.077
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 7.772
+    },
+    {
+      "date": "2022-08-01",
+      "label": "Aug 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 33.018
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 5.459
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 15.552
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.48
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 10.234
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.939
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 8.915
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 9.409
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 6.651
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 7.163
+    },
+    {
+      "date": "2022-09-01",
+      "label": "Sep 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 33.112
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 4.095
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 14.151
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.591
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 9.309
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.386
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 8.011
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 8.386
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 6.743
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 2.006
+    },
+    {
+      "date": "2022-10-01",
+      "label": "Oct 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 19.999
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.55
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 13.752
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.49
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 9.583
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.163
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 6.725
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 7.19
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 6.819
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -3.355
+    },
+    {
+      "date": "2022-11-01",
+      "label": "Nov 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 15.459
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 2.907
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 14.31
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.251
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 8.41
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.567
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 7.476
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 5.86
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 7.025
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -8.842
+    },
+    {
+      "date": "2022-12-01",
+      "label": "Dec 2022",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 19.318
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.059
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 11.846
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.203
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 7.133
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.986
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 7.873
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 5.757
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 7.159
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -11.634
+    },
+    {
+      "date": "2023-01-01",
+      "label": "Jan 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 26.779
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.262
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 12.86
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.411
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 5.281
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.003
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 6.499
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 5.825
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 7.262
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -13.448
+    },
+    {
+      "date": "2023-02-01",
+      "label": "Feb 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 14.178
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.252
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 10.105
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.783
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.508
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.224
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 4.103
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 6.098
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 7.115
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -10.984
+    },
+    {
+      "date": "2023-03-01",
+      "label": "Mar 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 5.563
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.647
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 8.391
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.554
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.243
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.326
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 2.739
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 5.438
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 6.827
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -6.57
+    },
+    {
+      "date": "2023-04-01",
+      "label": "Apr 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -2.026
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.475
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.926
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 8.265
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.914
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.936
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 0.41
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 4.669
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 6.571
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -4.276
+    },
+    {
+      "date": "2023-05-01",
+      "label": "May 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -10.964
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.073
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.367
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 7.662
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 3.025
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.166
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": -0.047
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 4.073
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 6.155
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -5.312
+    },
+    {
+      "date": "2023-06-01",
+      "label": "Jun 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -18.662
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.182
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.049
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 7.098
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.863
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.396
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": -0.116
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 3.525
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 6.113
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -5.738
+    },
+    {
+      "date": "2023-07-01",
+      "label": "Jul 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -13.74
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 3.09
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 2.149
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 6.544
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.102
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.488
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 0.025
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 2.935
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.891
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -6.717
+    },
+    {
+      "date": "2023-08-01",
+      "label": "Aug 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -16.389
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 2.316
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 2.618
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 5.963
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.669
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.666
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 0.103
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 2.538
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.682
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -7.988
+    },
+    {
+      "date": "2023-09-01",
+      "label": "Sep 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -19.872
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 2.606
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 2.392
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 5.372
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 1.079
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 5.641
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 0.322
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 1.865
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.512
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -7.104
+    },
+    {
+      "date": "2023-10-01",
+      "label": "Oct 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -15.841
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 1.077
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.38
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 5.293
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.244
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 6.26
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 0.013
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 1.333
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.498
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -3.669
+    },
+    {
+      "date": "2023-11-01",
+      "label": "Nov 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -10.374
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.969
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.328
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 5.241
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.28
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 5.568
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": -0.118
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.99
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.314
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -1.263
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Dec 2023",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -13.662
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.056
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.764
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 5.083
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.939
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 6.517
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": -0.822
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.723
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.392
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -3.799
+    },
+    {
+      "date": "2024-01-01",
+      "label": "Jan 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -17.787
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -0.041
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.548
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.521
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.749
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 6.112
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": -0.446
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.429
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.235
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -1.309
+    },
+    {
+      "date": "2024-02-01",
+      "label": "Feb 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -8.924
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.397
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 4.926
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.173
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.123
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 7.68
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 1.383
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.072
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.393
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -1.082
+    },
+    {
+      "date": "2024-03-01",
+      "label": "Mar 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -3.178
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 1.321
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.079
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.15
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 1.955
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 7.85
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 1.158
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.339
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.322
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -5.536
+    },
+    {
+      "date": "2024-04-01",
+      "label": "Apr 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -1.871
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.8
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.882
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.026
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.775
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 7.35
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 2.42
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.755
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.207
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -9.163
+    },
+    {
+      "date": "2024-05-01",
+      "label": "May 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 0.258
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.778
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 4.377
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.057
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": -0.455
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 7.1
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 2.783
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.872
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 5.031
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -9.937
+    },
+    {
+      "date": "2024-06-01",
+      "label": "Jun 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 3.678
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.228
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 4.907
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.092
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": -0.179
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 6.206
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 3.138
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -1.01
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.914
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -9.96
+    },
+    {
+      "date": "2024-07-01",
+      "label": "Jul 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 1.416
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.321
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.938
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.006
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": -0.248
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 5.792
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 3.27
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -1.187
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.934
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -8.57
+    },
+    {
+      "date": "2024-08-01",
+      "label": "Aug 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": -0.106
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 1.787
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.738
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.949
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.644
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.82
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 3.868
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -1.284
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.755
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -6.297
+    },
+    {
+      "date": "2024-09-01",
+      "label": "Sep 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 1.993
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.296
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 4.529
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.807
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.876
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.28
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 1.982
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -1.273
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.78
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -4.894
+    },
+    {
+      "date": "2024-10-01",
+      "label": "Oct 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 2.037
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 1.131
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.107
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.648
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 1.009
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.265
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 3.812
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.691
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.592
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -5.036
+    },
+    {
+      "date": "2024-11-01",
+      "label": "Nov 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 1.821
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 1.24
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 2.82
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.618
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.843
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.991
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 4.098
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.43
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.449
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -4.652
+    },
+    {
+      "date": "2024-12-01",
+      "label": "Dec 2024",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 4.971
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.405
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 1.826
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.381
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.073
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.247
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.8
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.34
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.314
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 0.929
+    },
+    {
+      "date": "2025-01-01",
+      "label": "Jan 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 4.998
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.598
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 2.453
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.684
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": -0.254
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.764
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 7.208
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.319
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 4.112
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 0.703
+    },
+    {
+      "date": "2025-02-01",
+      "label": "Feb 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 5.849
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.331
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 2.73
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.79
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": -0.586
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.851
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 7.458
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": -0.07
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.677
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 0.611
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Mar 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 9.384
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -0.718
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 3.604
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.889
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": -0.694
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.802
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 6.825
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.323
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.577
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 1.548
+    },
+    {
+      "date": "2025-04-01",
+      "label": "Apr 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 15.748
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -0.914
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 4.491
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.849
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": -0.31
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 3.913
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 6.117
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.441
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.533
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 1.71
+    },
+    {
+      "date": "2025-05-01",
+      "label": "May 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 15.34
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -0.518
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.806
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.834
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.888
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 4.232
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.858
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.262
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.611
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 2.735
+    },
+    {
+      "date": "2025-06-01",
+      "label": "Jun 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 14.13
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -0.213
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.575
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.905
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.339
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 5.74
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.415
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.438
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.655
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 4.813
+    },
+    {
+      "date": "2025-07-01",
+      "label": "Jul 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 13.732
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.232
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 6.205
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.932
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 1.876
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 5.318
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.63
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.665
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.613
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 6.042
+    },
+    {
+      "date": "2025-08-01",
+      "label": "Aug 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 13.754
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": -0.083
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 5.105
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.726
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 1.255
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 5.846
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 5.154
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.747
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.478
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 5.138
+    },
+    {
+      "date": "2025-09-01",
+      "label": "Sep 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 11.754
+    },
+    {
+      "date": "2025-10-01",
+      "label": "Oct 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.883
+    },
+    {
+      "date": "2025-10-01",
+      "label": "Oct 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 4.713
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.171
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 6.951
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.66
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": -0.12
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 5.995
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 4.671
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.614
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 2.983
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 3.554
+    },
+    {
+      "date": "2025-11-01",
+      "label": "Nov 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 9.197
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 0.603
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 6.68
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 4.069
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.282
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 6.704
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 3.95
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.252
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 3.032
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": 1.631
+    },
+    {
+      "date": "2025-12-01",
+      "label": "Dec 2025",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 10.804
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 1.729
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 6.329
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.978
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 0.927
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 6.878
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 2.506
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.371
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 2.952
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -1.959
+    },
+    {
+      "date": "2026-01-01",
+      "label": "Jan 2026",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 9.826
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CPIAPPNS",
+      "category": "Apparel",
+      "yoy": 2.529
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SEHF01",
+      "category": "Electricity",
+      "yoy": 4.804
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SEFV",
+      "category": "Food away from home",
+      "yoy": 3.903
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SAF113",
+      "category": "Fruits and vegetables",
+      "yoy": 2.686
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SEMD",
+      "category": "Hospital and related services",
+      "yoy": 7.587
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SAF112",
+      "category": "Meats, poultry, fish, and eggs",
+      "yoy": 1.02
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SETA01",
+      "category": "New vehicles",
+      "yoy": 0.451
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SASLE",
+      "category": "Services less energy services",
+      "yoy": 2.933
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SETA02",
+      "category": "Used cars and trucks",
+      "yoy": -3.199
+    },
+    {
+      "date": "2026-02-01",
+      "label": "Feb 2026",
+      "seriesId": "CUSR0000SEHF02",
+      "category": "Utility gas service",
+      "yoy": 10.889
+    }
+  ]
+}
