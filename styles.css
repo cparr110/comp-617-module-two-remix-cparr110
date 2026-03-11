@@ -2,12 +2,13 @@
   --bg: #f7f2e8;
   --ink: #1f2a37;
   --muted: #51606f;
-  --card: rgba(255, 255, 255, 0.8);
+  --card: rgba(255, 255, 255, 0.82);
   --line-core: #1d6fa5;
   --line-overall: #c3423f;
   --positive: #cf4d45;
   --negative: #2f6aa0;
   --accent: #f2a65a;
+  --focus: #f2a65a;
   --shadow: 0 16px 40px rgba(26, 40, 58, 0.12);
 }
 
@@ -60,7 +61,7 @@ main {
 }
 
 .hero {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.2rem;
 }
 
 .eyebrow {
@@ -109,6 +110,53 @@ h1 {
   margin: 0.9rem 0;
 }
 
+.scrolly-section {
+  margin: 1.8rem 0 2.8rem;
+}
+
+.scrolly-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 1.1rem;
+}
+
+.steps {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.step {
+  border: 1px solid rgba(62, 84, 108, 0.2);
+  border-radius: 12px;
+  padding: 0.85rem 0.95rem;
+  background: rgba(255, 255, 255, 0.62);
+  transform: translateY(0);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.step h3 {
+  font-size: 1.08rem;
+}
+
+.step p {
+  margin: 0.45rem 0 0;
+  color: #3e4f62;
+  font-size: 0.95rem;
+}
+
+.step.is-active {
+  border-color: rgba(242, 166, 90, 0.9);
+  box-shadow: 0 10px 24px rgba(56, 70, 87, 0.16);
+  transform: translateY(-2px);
+}
+
+.sticky-panel {
+  position: sticky;
+  top: 0.9rem;
+  align-self: start;
+}
+
 .viz-section {
   margin: 2.4rem 0;
 }
@@ -141,6 +189,19 @@ h1 {
   border-radius: 16px;
   padding: 1rem;
   box-shadow: var(--shadow);
+}
+
+.step-card {
+  min-height: 220px;
+}
+
+.focus-target {
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.focus-target.is-scrolly-focus {
+  border-color: rgba(242, 166, 90, 0.95);
+  box-shadow: 0 14px 30px rgba(94, 76, 42, 0.2);
 }
 
 .chart {
@@ -212,6 +273,42 @@ h1 {
   font-size: 1.15rem;
 }
 
+.claim-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.claim-card {
+  border: 1px solid rgba(71, 91, 115, 0.25);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+}
+
+.claim-card h3 {
+  font-size: 1rem;
+}
+
+.claim-card p {
+  margin: 0.4rem 0;
+  color: #45586d;
+}
+
+.claim-card strong {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(213, 72, 65, 0.14);
+  color: #9f2f2b;
+}
+
+.claim-card.counter strong {
+  background: rgba(29, 111, 165, 0.14);
+  color: #1d5c86;
+}
+
 .axis path,
 .axis line {
   stroke: #8ea0b2;
@@ -250,6 +347,16 @@ a {
   color: #1b6d98;
 }
 
+@media (max-width: 900px) {
+  .scrolly-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky-panel {
+    position: static;
+  }
+}
+
 @media (max-width: 700px) {
   body {
     padding: 1.2rem 0.8rem 3rem;
@@ -257,5 +364,9 @@ a {
 
   .chart {
     min-height: 320px;
+  }
+
+  .claim-row {
+    grid-template-columns: 1fr;
   }
 }

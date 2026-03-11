@@ -1,19 +1,22 @@
 const palette = {
   overall: '#c3423f',
   core: '#1d6fa5',
+  services: '#256b3f',
   positive: '#cf4d45',
   negative: '#2f6aa0',
   accent: '#f2a65a',
   ink: '#1f2a37'
 };
 
+const SERVICES_LABEL = 'Services less energy services';
+
 const state = {
   selectedDate: null,
-  sortMode: 'value'
+  sortMode: 'value',
+  activeStepId: null
 };
 
 const dateParser = d3.utcParse('%Y-%m-%d');
-const monthLabel = d3.utcFormat('%b %Y');
 
 let trend = [];
 let categories = [];
@@ -39,8 +42,7 @@ function pearsonCorrelation(items, accessorX, accessorY) {
     .map((d) => [accessorX(d), accessorY(d)])
     .filter(([x, y]) => Number.isFinite(x) && Number.isFinite(y));
 
-  const n = values.length;
-  if (n < 3) {
+  if (values.length < 3) {
     return null;
   }
 
@@ -67,6 +69,39 @@ function pearsonCorrelation(items, accessorX, accessorY) {
   return numerator / denominator;
 }
 
+function standardDeviation(values) {
+  const clean = values.filter((d) => Number.isFinite(d));
+  if (!clean.length) {
+    return null;
+  }
+
+  const mean = d3.mean(clean);
+  const variance = d3.mean(clean, (d) => (d - mean) ** 2);
+  return Math.sqrt(variance);
+}
+
+function syncSortButtons() {
+  d3.selectAll('.toggle').classed('is-active', false);
+  d3.select(`.toggle[data-sort="${state.sortMode}"]`).classed('is-active', true);
+}
+
+function setSortMode(nextSort) {
+  if (!nextSort || (nextSort !== 'value' && nextSort !== 'alpha')) {
+    return;
+  }
+
+  state.sortMode = nextSort;
+  syncSortButtons();
+}
+
+function setSelectedDate(nextDate) {
+  if (!nextDate || !trendByDate.has(nextDate)) {
+    return;
+  }
+
+  state.selectedDate = nextDate;
+}
+
 function setupControls() {
   d3.selectAll('.toggle').on('click', function onClick() {
     const nextSort = this.getAttribute('data-sort');
@@ -74,11 +109,85 @@ function setupControls() {
       return;
     }
 
-    state.sortMode = nextSort;
-    d3.selectAll('.toggle').classed('is-active', false);
-    d3.select(this).classed('is-active', true);
+    setSortMode(nextSort);
     renderCategoryChart();
   });
+}
+
+function highlightFocus(focus) {
+  d3.selectAll('.focus-target').classed('is-scrolly-focus', false);
+
+  if (!focus) {
+    return;
+  }
+
+  const map = {
+    trend: '#trend-card',
+    category: '#category-card',
+    oil: '#oil-card',
+    counter: '#counter-card'
+  };
+
+  const selector = map[focus];
+  if (selector) {
+    d3.select(selector).classed('is-scrolly-focus', true);
+  }
+}
+
+function activateStep(stepElement) {
+  const nextStepId = stepElement?.dataset?.stepId;
+  if (!stepElement || (nextStepId && nextStepId === state.activeStepId)) {
+    return;
+  }
+
+  d3.selectAll('.step').classed('is-active', false);
+  d3.select(stepElement).classed('is-active', true);
+
+  state.activeStepId = nextStepId ?? null;
+
+  const title = stepElement.querySelector('h3')?.textContent ?? 'Scrollytelling Step';
+  const body = stepElement.querySelector('p')?.textContent ?? '';
+  d3.select('#step-title').text(title);
+  d3.select('#step-body').text(body);
+
+  setSelectedDate(stepElement.dataset.date);
+  if (stepElement.dataset.sort) {
+    setSortMode(stepElement.dataset.sort);
+  }
+
+  highlightFocus(stepElement.dataset.focus);
+  renderAll();
+}
+
+function setupScrollytelling() {
+  const stepNodes = d3.selectAll('.step').nodes();
+
+  stepNodes.forEach((node) => {
+    node.addEventListener('click', () => activateStep(node));
+  });
+
+  if (!('IntersectionObserver' in window)) {
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+      if (visible[0]) {
+        activateStep(visible[0].target);
+      }
+    },
+    {
+      root: null,
+      threshold: [0.45, 0.6, 0.75],
+      rootMargin: '-15% 0px -35% 0px'
+    }
+  );
+
+  stepNodes.forEach((node) => observer.observe(node));
 }
 
 function updateStats() {
@@ -91,6 +200,9 @@ function updateStats() {
   d3.select('#selected-overall').text(formatPct(selected.overallYoY));
   d3.select('#selected-core').text(formatPct(selected.coreYoY));
   d3.select('#selected-wti').text(formatUsd(selected.wti));
+
+  d3.select('#claim-original-metric').text(`Energy CPI: ${formatPct(selected.energyYoY)}`);
+  d3.select('#claim-counter-metric').text(`Services ex-energy: ${formatPct(selected.servicesYoY)}`);
 }
 
 function renderTrendChart() {
@@ -233,7 +345,7 @@ function renderTrendChart() {
       .attr('opacity', 0.75);
 
     g.append('text')
-      .attr('x', Math.min(missingX + 8, innerWidth - 120))
+      .attr('x', Math.min(missingX + 8, innerWidth - 130))
       .attr('y', 12)
       .attr('fill', '#495d71')
       .attr('font-size', 11)
@@ -321,11 +433,8 @@ function renderTrendChart() {
         return;
       }
 
-      state.selectedDate = closest.date;
-      updateStats();
-      renderTrendChart();
-      renderCategoryChart();
-      renderOilChart();
+      setSelectedDate(closest.date);
+      renderAll();
     });
 }
 
@@ -448,7 +557,7 @@ function renderCategoryChart() {
       .attr('stroke-dasharray', '6,4');
 
     g.append('text')
-      .attr('x', Math.min(innerWidth - 120, x(selectedTrend.overallYoY) + 6))
+      .attr('x', Math.min(innerWidth - 130, x(selectedTrend.overallYoY) + 6))
       .attr('y', -10)
       .attr('fill', '#8f5e27')
       .attr('font-size', 11)
@@ -559,11 +668,8 @@ function renderOilChart() {
     })
     .on('pointerleave', () => tooltip.style('opacity', 0))
     .on('click', (_, d) => {
-      state.selectedDate = d.date;
-      updateStats();
-      renderTrendChart();
-      renderCategoryChart();
-      renderOilChart();
+      setSelectedDate(d.date);
+      renderAll();
     });
 
   const selected = trendByDate.get(state.selectedDate);
@@ -597,11 +703,181 @@ function renderOilChart() {
   d3.select('#oil-insight').text(insight);
 }
 
+function renderCounterChart() {
+  const container = d3.select('#counter-chart');
+  container.selectAll('*').remove();
+
+  const points = trend.filter(
+    (d) => Number.isFinite(d.energyYoY) && Number.isFinite(d.servicesYoY) && d.date >= '2021-01-01'
+  );
+
+  if (!points.length) {
+    container.append('p').text('No comparison data available.');
+    return;
+  }
+
+  const width = container.node().clientWidth;
+  const height = 360;
+  const margin = { top: 26, right: 20, bottom: 44, left: 56 };
+  const innerWidth = width - margin.left - margin.right;
+  const innerHeight = height - margin.top - margin.bottom;
+
+  const svg = container
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .attr('viewBox', `0 0 ${width} ${height}`);
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  const x = d3
+    .scaleUtc()
+    .domain(d3.extent(points, (d) => d.dateObj))
+    .range([0, innerWidth]);
+
+  const y = d3
+    .scaleLinear()
+    .domain(d3.extent(points.flatMap((d) => [d.energyYoY, d.servicesYoY])))
+    .nice()
+    .range([innerHeight, 0]);
+
+  g.append('g')
+    .attr('class', 'grid')
+    .call(d3.axisLeft(y).tickSize(-innerWidth).tickFormat(''));
+
+  g.append('g')
+    .attr('class', 'axis')
+    .attr('transform', `translate(0,${innerHeight})`)
+    .call(d3.axisBottom(x).ticks(d3.utcYear.every(1)).tickFormat(d3.utcFormat('%Y')))
+    .call((axis) => axis.select('.domain').remove());
+
+  g.append('g')
+    .attr('class', 'axis')
+    .call(d3.axisLeft(y).ticks(6).tickFormat((v) => `${v}%`))
+    .call((axis) => axis.select('.domain').remove());
+
+  const line = (key) =>
+    d3
+      .line()
+      .defined((d) => Number.isFinite(d[key]))
+      .x((d) => x(d.dateObj))
+      .y((d) => y(d[key]));
+
+  g.append('path')
+    .datum(points)
+    .attr('fill', 'none')
+    .attr('stroke', palette.positive)
+    .attr('stroke-width', 2.1)
+    .attr('d', line('energyYoY'));
+
+  g.append('path')
+    .datum(points)
+    .attr('fill', 'none')
+    .attr('stroke', palette.services)
+    .attr('stroke-width', 2.1)
+    .attr('d', line('servicesYoY'));
+
+  const legend = g.append('g').attr('class', 'legend').attr('transform', 'translate(0,-12)');
+  [
+    { label: 'Energy CPI', color: palette.positive },
+    { label: 'Services less energy services', color: palette.services }
+  ].forEach((item, index) => {
+    const itemGroup = legend.append('g').attr('transform', `translate(${index * 210},0)`);
+    itemGroup
+      .append('line')
+      .attr('x1', 0)
+      .attr('x2', 18)
+      .attr('y1', 0)
+      .attr('y2', 0)
+      .attr('stroke', item.color)
+      .attr('stroke-width', 2.8);
+    itemGroup.append('text').attr('x', 24).attr('y', 4).text(item.label);
+  });
+
+  const selected = trendByDate.get(state.selectedDate);
+  if (selected && Number.isFinite(selected.energyYoY) && Number.isFinite(selected.servicesYoY)) {
+    const selectedX = x(selected.dateObj);
+
+    g.append('line')
+      .attr('x1', selectedX)
+      .attr('x2', selectedX)
+      .attr('y1', 0)
+      .attr('y2', innerHeight)
+      .attr('stroke', '#5f6d7b')
+      .attr('stroke-width', 1.2)
+      .attr('stroke-dasharray', '4,4');
+
+    g.append('circle')
+      .attr('cx', selectedX)
+      .attr('cy', y(selected.energyYoY))
+      .attr('r', 4.3)
+      .attr('fill', palette.positive)
+      .attr('stroke', '#ffffff')
+      .attr('stroke-width', 1.2);
+
+    g.append('circle')
+      .attr('cx', selectedX)
+      .attr('cy', y(selected.servicesYoY))
+      .attr('r', 4.3)
+      .attr('fill', palette.services)
+      .attr('stroke', '#ffffff')
+      .attr('stroke-width', 1.2);
+  }
+
+  const tooltip = container.append('div').attr('class', 'tooltip').style('opacity', 0);
+  const bisectDate = d3.bisector((d) => d.dateObj).center;
+
+  g.append('rect')
+    .attr('width', innerWidth)
+    .attr('height', innerHeight)
+    .attr('fill', 'transparent')
+    .on('pointermove', function onMove(event) {
+      const [mx] = d3.pointer(event, this);
+      const closest = points[bisectDate(points, x.invert(mx))];
+      if (!closest) {
+        return;
+      }
+
+      tooltip
+        .style('opacity', 1)
+        .style('left', `${margin.left + x(closest.dateObj)}px`)
+        .style('top', `${margin.top + y(closest.servicesYoY)}px`)
+        .html(
+          `<strong>${closest.label}</strong><br>Energy CPI: ${formatPct(closest.energyYoY)}<br>Services ex-energy: ${formatPct(
+            closest.servicesYoY
+          )}`
+        );
+    })
+    .on('pointerleave', () => tooltip.style('opacity', 0))
+    .on('click', function onClick(event) {
+      const [mx] = d3.pointer(event, this);
+      const closest = points[bisectDate(points, x.invert(mx))];
+      if (!closest) {
+        return;
+      }
+
+      setSelectedDate(closest.date);
+      renderAll();
+    });
+
+  const energyVolatility = standardDeviation(points.map((d) => d.energyYoY));
+  const servicesVolatility = standardDeviation(points.map((d) => d.servicesYoY));
+
+  const summary = selected
+    ? `${selected.label}: energy CPI ${formatPct(selected.energyYoY)} vs services ex-energy ${formatPct(
+        selected.servicesYoY
+      )}. Since 2021, energy has been about ${(energyVolatility ?? 0).toFixed(1)} pp volatile monthly, versus ${(servicesVolatility ?? 0).toFixed(1)} pp for services.`
+    : `Since 2021, energy has been about ${(energyVolatility ?? 0).toFixed(1)} pp volatile monthly, versus ${(servicesVolatility ?? 0).toFixed(1)} pp for services.`;
+
+  d3.select('#counter-insight').text(summary);
+}
+
 function renderAll() {
   updateStats();
   renderTrendChart();
   renderCategoryChart();
   renderOilChart();
+  renderCounterChart();
 }
 
 function debounce(fn, waitMs) {
@@ -615,20 +891,34 @@ function debounce(fn, waitMs) {
 async function init() {
   const raw = await d3.json('data/inflation-data.json');
 
+  const servicesByDate = new Map(
+    raw.categories
+      .filter((d) => d.category === SERVICES_LABEL)
+      .map((d) => [d.date, d.yoy])
+  );
+
   trend = raw.trend.map((d) => ({
     ...d,
-    dateObj: dateParser(d.date)
+    dateObj: dateParser(d.date),
+    servicesYoY: servicesByDate.get(d.date) ?? null
   }));
 
   categories = raw.categories;
   trendByDate = new Map(trend.map((d) => [d.date, d]));
   categoriesByDate = d3.group(categories, (d) => d.date);
 
-  state.selectedDate =
-    raw.metadata?.selectedDateDefault ?? trend.findLast((d) => Number.isFinite(d.overallYoY))?.date;
+  setSelectedDate(raw.metadata?.selectedDateDefault ?? trend.findLast((d) => Number.isFinite(d.overallYoY))?.date);
 
   setupControls();
-  renderAll();
+  setupScrollytelling();
+  syncSortButtons();
+
+  const firstStep = d3.select('.step').node();
+  if (firstStep) {
+    activateStep(firstStep);
+  } else {
+    renderAll();
+  }
 
   window.addEventListener(
     'resize',

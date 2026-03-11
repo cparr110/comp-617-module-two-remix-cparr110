@@ -39,10 +39,82 @@
           then asks a different question: <strong>how much of inflation risk is really oil, and how
           much is still embedded in services?</strong>
         </p>
-        <p>
-          Click any month in the first chart. The selected month updates the category breakdown and
-          the oil-versus-energy chart below.
-        </p>
+      </section>
+
+      <section class="scrolly-section" id="scrolly-lab">
+        <div class="section-head">
+          <h2>Scrollytelling Walkthrough (New Technique)</h2>
+          <p>
+            Scroll through these checkpoints. Each step re-frames the same data and updates the
+            coordinated views below.
+          </p>
+        </div>
+
+        <div class="scrolly-grid">
+          <article class="steps" id="story-steps">
+            <div class="step is-active" data-step-id="step-1" data-focus="trend" data-date="2021-06-01" data-sort="value">
+              <h3>Step 1: The Surge Begins</h3>
+              <p>
+                Inflation accelerates in 2021. This is where a baseline-only reading starts to hide
+                momentum.
+              </p>
+            </div>
+
+            <div class="step" data-step-id="step-2" data-focus="oil" data-date="2022-06-01" data-sort="value">
+              <h3>Step 2: Oil Shock Is Real</h3>
+              <p>
+                Mid-2022 shows the original article's key mechanism: higher oil often pairs with
+                hotter energy inflation.
+              </p>
+            </div>
+
+            <div class="step" data-step-id="step-3" data-focus="category" data-date="2024-06-01" data-sort="value">
+              <h3>Step 3: But Not Everything Cools Equally</h3>
+              <p>
+                By 2024, some goods cool while service-heavy categories remain elevated, which keeps
+                pressure alive even when oil is not peaking.
+              </p>
+            </div>
+
+            <div class="step" data-step-id="step-4" data-focus="counter" data-date="2026-02-01" data-sort="value">
+              <h3>Step 4: February 2026 Counterpoint</h3>
+              <p>
+                February 2026 looks calm in aggregate, but service inflation remains sticky. The
+                risk story is broader than oil alone.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sticky-panel">
+            <div class="card step-card">
+              <p class="eyebrow" id="step-kicker">Scrollytelling Step</p>
+              <h3 id="step-title">Step 1: The Surge Begins</h3>
+              <p id="step-body">
+                Inflation accelerates in 2021. This is where a baseline-only reading starts to hide
+                momentum.
+              </p>
+
+              <div class="stat-strip">
+                <div class="stat-chip">
+                  <span class="label">Selected Month</span>
+                  <strong id="selected-month">-</strong>
+                </div>
+                <div class="stat-chip">
+                  <span class="label">Headline CPI (YoY)</span>
+                  <strong id="selected-overall">-</strong>
+                </div>
+                <div class="stat-chip">
+                  <span class="label">Core CPI (YoY)</span>
+                  <strong id="selected-core">-</strong>
+                </div>
+                <div class="stat-chip">
+                  <span class="label">WTI Oil</span>
+                  <strong id="selected-wti">-</strong>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
       </section>
 
       <section class="viz-section">
@@ -53,26 +125,8 @@
             to coordinate all views.
           </p>
         </div>
-        <div class="card">
+        <div id="trend-card" class="card focus-target">
           <div id="trend-chart" class="chart" aria-label="Line chart of headline and core inflation"></div>
-          <div class="stat-strip">
-            <div class="stat-chip">
-              <span class="label">Selected Month</span>
-              <strong id="selected-month">-</strong>
-            </div>
-            <div class="stat-chip">
-              <span class="label">Headline CPI (YoY)</span>
-              <strong id="selected-overall">-</strong>
-            </div>
-            <div class="stat-chip">
-              <span class="label">Core CPI (YoY)</span>
-              <strong id="selected-core">-</strong>
-            </div>
-            <div class="stat-chip">
-              <span class="label">WTI Oil</span>
-              <strong id="selected-wti">-</strong>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -89,7 +143,7 @@
             <button class="toggle" data-sort="alpha">Sort alphabetically</button>
           </div>
         </div>
-        <div class="card">
+        <div id="category-card" class="card focus-target">
           <h3 id="category-title">Category inflation</h3>
           <div id="category-chart" class="chart" aria-label="Diverging bar chart of CPI categories"></div>
         </div>
@@ -103,19 +157,48 @@
             click points to inspect months.
           </p>
         </div>
-        <div class="card">
+        <div id="oil-card" class="card focus-target">
           <div id="oil-chart" class="chart" aria-label="Scatterplot of WTI oil price versus energy inflation"></div>
           <p class="footnote" id="oil-insight"></p>
+        </div>
+      </section>
+
+      <section class="viz-section counter-section">
+        <div class="section-head">
+          <h2>4) Multiple Views Counter-Argument</h2>
+          <p>
+            <strong>Original WSJ emphasis:</strong> the next inflation move depends heavily on oil.
+            <strong>Counter-argument in this remix:</strong> energy matters, but sticky service inflation
+            can keep pressure elevated even when oil is off its highs.
+          </p>
+        </div>
+
+        <div class="claim-row">
+          <div class="claim-card">
+            <h3>Original Claim Lens</h3>
+            <p>Near-term inflation risk is mostly energy pass-through.</p>
+            <strong id="claim-original-metric">-</strong>
+          </div>
+          <div class="claim-card counter">
+            <h3>Counter-Argument Lens</h3>
+            <p>Persistent services inflation can outlast energy spikes.</p>
+            <strong id="claim-counter-metric">-</strong>
+          </div>
+        </div>
+
+        <div id="counter-card" class="card focus-target">
+          <div id="counter-chart" class="chart" aria-label="Line chart comparing energy inflation with services inflation"></div>
+          <p class="footnote" id="counter-insight"></p>
         </div>
       </section>
 
       <section class="copy-block conclusion">
         <h2>Remix Takeaway</h2>
         <p>
-          This view-based remix supports the WSJ warning, but with a narrower claim: oil shocks can
-          quickly reheat headline inflation, yet category data suggest that persistent services costs
-          remain a second, slower force. Readers can now test that claim month by month instead of
-          accepting one static frame.
+          This remix supports the WSJ warning, but narrows and extends it: oil shocks can quickly
+          reheat headline inflation, while services can sustain inflation pressure after the energy
+          shock fades. The scrollytelling structure changes the reading experience from passive to
+          investigative by letting readers move through staged checkpoints and test the claim.
         </p>
       </section>
 
@@ -133,6 +216,17 @@
             Data source: Federal Reserve Economic Data (FRED), St. Louis Fed;
             underlying CPI data from the U.S. Bureau of Labor Statistics and oil data from the
             U.S. Energy Information Administration.
+          </li>
+          <li>
+            Live deployment:
+            <a
+              id="live-link"
+              href="https://cparr110.github.io/comp-617-module-two-remix-cparr110/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://cparr110.github.io/comp-617-module-two-remix-cparr110/
+            </a>
           </li>
           <li>
             AI use disclosure: OpenAI Codex (GPT-5) was used for implementation support,
