@@ -42,6 +42,3 @@ node scripts/build-data.mjs
 python3 -m http.server 8000
 ```
 Then open <http://localhost:8000>.
-
-## AI Use Disclosure
-OpenAI Codex (GPT-5) was used for implementation support, D3 debugging, and copy editing. The story framing, visual argument, and design decisions were authored by Clay Parr.
