@@ -11,9 +11,8 @@
       <p class="eyebrow">COMP 617 - Module 2 Data Story Remix</p>
       <h1>Baseline or Warning Light?</h1>
       <p class="deck">
-        Remixing the Wall Street Journal's February 2026 inflation story by shifting from one
-        monthly snapshot to coordinated views of category pressure, trend persistence, and oil
-        sensitivity.
+        A remix of the Wall Street Journal's February 2026 inflation story using a longer time
+        view, category comparisons, and oil data.
       </p>
       <div class="meta-row">
         <span>By Clay Parr</span>
@@ -36,8 +35,8 @@
         <div class="section-head">
           <h2>Scrollytelling Walkthrough (New Technique)</h2>
           <p>
-            Scroll through these checkpoints. Each step re-frames the same data and updates the
-            coordinated views below.
+            Scroll through these checkpoints. Each step looks at the same data in a different way
+            and updates the charts below.
           </p>
         </div>
 
@@ -46,8 +45,8 @@
             <div class="step is-active" data-step-id="step-1" data-focus="trend" data-date="2021-06-01" data-sort="value">
               <h3>Step 1: The Surge Begins</h3>
               <p>
-                Inflation accelerates in 2021. This is where a baseline-only reading starts to hide
-                momentum.
+                Inflation rises in 2021. Looking at only one month makes it harder to see how fast
+                that change happens.
               </p>
             </div>
 
@@ -62,8 +61,8 @@
             <div class="step" data-step-id="step-3" data-focus="category" data-date="2024-06-01" data-sort="value">
               <h3>Step 3: But Not Everything Cools Equally</h3>
               <p>
-                By 2024, some goods cool while service-heavy categories remain elevated, which keeps
-                pressure alive even when oil is not peaking.
+                By 2024, some goods cool off, but service-heavy categories are still high. That
+                keeps inflation pressure around even without peak oil prices.
               </p>
             </div>
 
@@ -81,8 +80,8 @@
               <p class="eyebrow" id="step-kicker">Scrollytelling Step</p>
               <h3 id="step-title">Step 1: The Surge Begins</h3>
               <p id="step-body">
-                Inflation accelerates in 2021. This is where a baseline-only reading starts to hide
-                momentum.
+                Inflation rises in 2021. Looking at only one month makes it harder to see how fast
+                that change happens.
               </p>
 
               <div class="stat-strip">
@@ -160,12 +159,11 @@
           <p>
             The original WSJ article frames the next inflation move as primarily dependent on oil
             prices: if geopolitical shocks push crude higher, headline CPI follows. This remix
-            argues that framing undersells a second, more persistent channel.
+            argues that there is another channel worth watching.
             <strong>Counter-argument:</strong> even when oil retreats from its peaks, service-heavy
-            categories — shelter, medical care, transportation services — have remained elevated
-            since 2021. Energy CPI swings violently with oil, but services-less-energy CPI barely
-            budges. That stickiness means inflation pressure can persist long after an oil shock
-            fades, a risk the original snapshot does not capture.
+            categories such as shelter, medical care, and transportation services have stayed high
+            since 2021. Energy CPI moves a lot with oil, but services-less-energy CPI changes much
+            more slowly. That means inflation pressure can last after an oil shock fades.
           </p>
         </div>
 
@@ -191,13 +189,12 @@
       <section class="copy-block conclusion">
         <h2>Remix Takeaway</h2>
         <p>
-          This remix does not refute the WSJ's oil-risk warning — the scatter plot above confirms
-          that oil and energy CPI are correlated. Instead, it broadens the diagnosis: oil shocks
-          can quickly reheat headline inflation, but sticky services inflation can sustain elevated
-          pressure even after energy prices retreat. February 2026's calm headline number masks
-          the fact that several service categories still sit well above the overall CPI line.
-          A single-month, single-channel reading of inflation risk misses this persistence, and
-          the coordinated views in this remix are designed to make that gap visible.
+          This remix does not reject the WSJ's oil warning. The scatter plot above shows that oil
+          and energy CPI move together. The main point here is that oil is not the whole story.
+          Oil shocks can push headline inflation up quickly, but service inflation can stay high
+          even after energy prices come down. February 2026 looks calm at the top level, but
+          several service categories are still above the overall CPI line. Looking at only one
+          month and only one cause misses that pattern.
         </p>
       </section>
 
@@ -228,8 +225,9 @@
             </a>
           </li>
           <li>
-            AI use disclosure: OpenAI Codex (GPT-5) was used for implementation support,
-            D3 debugging, and copy editing. Story framing and design choices were authored by Clay Parr.
+            OpenAI GPT-5 was used for overall help, D3 
+            debugging, and copy editing. The story framing, 
+            data selection, and design decisions were done by Clay Parr.
           </li>
         </ul>
       </section>
