@@ -5,8 +5,6 @@
 - **Live deployment:** <https://cparr110.github.io/comp-617-module-two-remix-cparr110/>
 - **Local entry file:** `index.html`
 
-![Remix full-page screenshot](assets/page-full-v2.png)
-
 ## Original Piece + Credits
 - **Original story remixed:** Justin Lahart, Wall Street Journal, "Inflation Holds Steady, but Iran War Threatens to Boost Prices" (updated March 11, 2026).
 - **Link:** <https://www.wsj.com/economy/cpi-inflation-report-february-2026-df32173e?st=pou3u9&reflink=desktopwebshare_permalink>
