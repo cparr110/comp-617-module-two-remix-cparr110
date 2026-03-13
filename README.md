@@ -92,7 +92,7 @@ The text in the story explicitly discusses this: "The risk story is broader than
 ---
 
 ## AI Use Disclosure
-OpenAI GPT-5 was used for overall help, D3 debugging, and copy editing. The story framing, data selection, and design decisions were done by Clay Parr.
+OpenAI GPT-5 was used for overall help, D3 debugging, and copy editing. The story framing, data selection, and design decisions were done by me.
 
 ## Run Locally
 ```bash
