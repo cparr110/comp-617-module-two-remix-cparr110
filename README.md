@@ -19,6 +19,8 @@
 ## Remix Design and Story Argument
 The WSJ piece frames February 2026 as calm inflation with potential oil-driven upside risk. This remix keeps that framing, then broadens it with coordinated views that test whether persistent service inflation also matters.
 
+The presentation is intentionally simple: plain typography, flat panels, and straightforward controls keep the page closer to a coursework-style project while preserving the same interactive analysis.
+
 Visual structure in the final story:
 1. **Headline vs Core Trend (interactive D3 line chart):** click/hover month selection.
 2. **Category Pressure (interactive D3 diverging bars):** sorted rank or alphabetical scan.
@@ -32,7 +34,7 @@ Visual structure in the final story:
 4. **Multiple Views / Counter-Argument:** Added explicit "original claim vs counter-argument" text and chart evidence.
 
 ## Addendum: Effect of New Technique
-I changed from a static magazine-style flow to scrollytelling. Readers now move through four checkpoints (surge, oil shock, cooling, February baseline), and the coordinated charts update per step. This creates a guided comparison process rather than a single fixed interpretation.
+I changed from a static magazine-style flow to scrollytelling. Readers now move through four checkpoints (surge, oil shock, cooling, February baseline), and the coordinated charts update per step. This creates a guided comparison process rather than a single fixed interpretation, even though the surrounding page design stays visually restrained.
 
 ## Run Locally
 ```bash
@@ -40,6 +42,3 @@ node scripts/build-data.mjs
 python3 -m http.server 8000
 ```
 Then open <http://localhost:8000>.
-
-## AI Use Disclosure
-OpenAI Codex (GPT-5) was used for implementation support, D3 debugging, and copy editing. The story framing, visual argument, and design decisions were authored by Clay Parr.
