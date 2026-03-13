@@ -166,28 +166,30 @@ function setupScrollytelling() {
     node.addEventListener('click', () => activateStep(node));
   });
 
-  if (!('IntersectionObserver' in window)) {
+  if (!stepNodes.length) {
     return;
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+  const updateFromViewport = () => {
+    const viewportCenter = window.innerHeight / 2;
+    const visible = stepNodes
+      .map((node) => ({ node, rect: node.getBoundingClientRect() }))
+      .filter(({ rect }) => rect.bottom > 0 && rect.top < window.innerHeight)
+      .sort((a, b) => {
+        const aCenter = a.rect.top + a.rect.height / 2;
+        const bCenter = b.rect.top + b.rect.height / 2;
+        return Math.abs(aCenter - viewportCenter) - Math.abs(bCenter - viewportCenter);
+      });
 
-      if (visible[0]) {
-        activateStep(visible[0].target);
-      }
-    },
-    {
-      root: null,
-      threshold: [0.45, 0.6, 0.75],
-      rootMargin: '-15% 0px -35% 0px'
+    if (visible[0]) {
+      activateStep(visible[0].node);
     }
-  );
+  };
 
-  stepNodes.forEach((node) => observer.observe(node));
+  const scheduleViewportUpdate = debounce(updateFromViewport, 30);
+  window.addEventListener('scroll', scheduleViewportUpdate, { passive: true });
+  window.addEventListener('resize', scheduleViewportUpdate);
+  updateFromViewport();
 }
 
 function updateStats() {
